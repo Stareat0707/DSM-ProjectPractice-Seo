@@ -1,33 +1,49 @@
 #include <iostream>
 
-// y * width + x
-// width + 1
-
 int main()
 {
-	int width, height;
-	std::cin >> height >> width;
-	int arrayLength = width * height;
+	int row, col;
+	std::cin >> row >> col;
 
-	int* numArray = new int[arrayLength];
+	int x = 0;
+	int y = row - 1;
 
-	for (int i = 0; i < arrayLength; ++i)
+	int nowRow = row - 1;
+	int nowCol = 0;
+
+	int* nArray = new int[row * col];
+	for (int i = 0; i < row * col; ++i)
 	{
-		numArray[i] = 0;
+		nArray[i] = 0;
 	}
-	int position = width * (height - 1);
 
-	for (int i = 0; i < height; ++i)
+	for (int i = 1; i <= row * col; ++i)
 	{
-		for (int j = 0; j < width; ++j)
+		nArray[y++ * col + x++] = i;
+		if (x == col || y == row)
 		{
-			std::cout << numArray[i * width + j] << '\t';
+			x = 0;
+			y = --nowRow;
+			if (y < 0)
+			{
+				++y;
+				++nowRow;
+				while (nArray[y * col + x] != 0)
+				{
+					++x;
+				}
+			}
 		}
-		std::cout << std::endl;
 	}
 
-	delete[] numArray;
-	numArray = NULL;
+	for (int i = 1; i <= row * col; ++i)
+	{
+		std::cout << nArray[i - 1];
+		if (i % col == 0)
+			std::cout << std::endl;
+		else
+			std::cout << '\t';
+	}
 
 	return 0;
 }
