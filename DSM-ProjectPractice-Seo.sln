@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTreeMaker", "BinaryTr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "숫자 출력(좌상향 대각선)", "숫자 출력(좌상향 대각선)\숫자 출력(좌상향 대각선).vcxproj", "{27C25683-280A-4DA5-BD53-4996EDB9B9AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20180525", "20180525\20180525.vcxproj", "{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{27C25683-280A-4DA5-BD53-4996EDB9B9AB}.Release|x64.Build.0 = Release|x64
 		{27C25683-280A-4DA5-BD53-4996EDB9B9AB}.Release|x86.ActiveCfg = Release|Win32
 		{27C25683-280A-4DA5-BD53-4996EDB9B9AB}.Release|x86.Build.0 = Release|Win32
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Debug|x64.ActiveCfg = Debug|x64
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Debug|x64.Build.0 = Debug|x64
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Debug|x86.ActiveCfg = Debug|Win32
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Debug|x86.Build.0 = Debug|Win32
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Release|x64.ActiveCfg = Release|x64
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Release|x64.Build.0 = Release|x64
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Release|x86.ActiveCfg = Release|Win32
+		{B7BFC3C0-1F03-4D0B-BD8E-C6FC0D30ABD1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,7 +9,7 @@ int main()
 	int y = 0;
 
 	int nowRow = 0;
-	int nowCol = 0;
+	int nowCol = col - 1;
 
 	int* nArray = new int[row * col];
 	for (int i = 0; i < row * col; ++i)
@@ -28,10 +28,7 @@ int main()
 			{
 				--y;
 				--nowRow;
-				while (nArray[y * col + x] != 0)
-				{
-					--x;
-				}
+				x = --nowCol;
 			}
 		}
 	}
