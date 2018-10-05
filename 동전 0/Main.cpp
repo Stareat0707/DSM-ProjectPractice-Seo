@@ -11,7 +11,7 @@ int main()
 	vector<int> A(n);
 	for (int i = n - 1; i >= 0; --i)
 		cin >> A[i];
-
+	
 	int result = 0;
 	for (int i = 0; k > 0; ++i)
 	{

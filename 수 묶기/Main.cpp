@@ -21,7 +21,7 @@ int main()
 		else
 			nArr.push_back(m);
 	}
-
+	
 	sort(pArr.rbegin(), pArr.rend());
 	sort(nArr.begin(), nArr.end());
 
